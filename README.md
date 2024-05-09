@@ -1,1 +1,1 @@
- Servizio RESTful in Python per implementare un meccanismo di keepalive
+RESTful service in Python to implement a keepalive mechanism
