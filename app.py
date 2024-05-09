@@ -1,16 +1,16 @@
 from flask import Flask
 
-# Creiamo un'applicazione Flask
+# Create a Flask application
 app = Flask(__name__)
 
-# Definiamo una route '/keepalive' che risponde alle richieste GET
+# Define a route '/keepalive' that responds to GET requests
 @app.route('/keepalive', methods=['GET'])
 def keep_alive():
-    # Quando questa route viene richiamata, questa funzione viene eseguita
-    # e restituisce una risposta "Servizio raggiungibile" con codice di stato HTTP 200
-    return 'Servizio raggiungibile', 200
+    # When this route is called, this function is executed
+    # and returns a response "Service reachable" with HTTP status code 200
+    return 'Service reachable', 200
 
-# Eseguiamo l'applicazione solo se questo script viene eseguito direttamente
+# Run the application only if this script is executed directly
 if __name__ == '__main__':
-    # Avviamo l'applicazione in modalità debug
+    # Start the Flask application in debug mode
     app.run(debug=True)
